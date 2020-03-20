@@ -1,6 +1,8 @@
 package org.coursera.dukejava.cour01.week01.tests;
 
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.coursera.dukejava.cour01.week01.Perimeter;
 import org.coursera.dukejava.cour01.week01.Point;
 import org.junit.jupiter.api.Test;
@@ -19,9 +21,6 @@ class TestPerimeter {
 		perimeter.addPoint(p2);
 		perimeter.addPoint(p3);
 		
-		System.out.println(perimeter.calcPerimeter());
-		
-		
+		assertEquals(24, perimeter.calcPerimeter());
 	}
-
 }
