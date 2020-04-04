@@ -1,7 +1,5 @@
 package org.coursera.dukejava.cour01.week02.tests;
 
-import static org.junit.jupiter.api.Assertions.fail;
-
 import org.coursera.dukejava.cour01.week02.ResolucaoSemana02;
 import org.coursera.dukejava.cour01.week02.StringDNABuilder;
 import org.junit.jupiter.api.Test;
