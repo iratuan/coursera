@@ -15,7 +15,7 @@ class TestGenes {
 	
 	String dnaString = StringDNABuilder.stringDNA(path);
 	FindGene fg = new FindGene();
-	
+	  
 	
 	@Test
 	void testFindAllGenes() {
