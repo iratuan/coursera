@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 class TestPerimeter {
 	DecimalFormat formatter = new DecimalFormat("#.##");
 	String pathSystem ="//Volumes//Dados//Estudos//Coursera//DUKE-JAVA-SPECIALIZATION//COURSE-01-SOLVING-PROBLEMS-WITH-SOFTWARE/data/";
+//	String pathSystem ="C:\\Coursera\\coursera\\DUKE-JAVA-SPECIALIZATION\\COURSE-01-SOLVING-PROBLEMS-WITH-SOFTWARE\\data\\";
 	String path1 = pathSystem + "datatest1.txt";
 	String path2 = pathSystem + "datatest2.txt";
 	String path3 = pathSystem + "datatest3.txt";
@@ -33,13 +34,13 @@ class TestPerimeter {
 	void testPerimeter() {
 		
 		double result = s1.getPerimeter();
-		assertEquals("30.64", formatter.format(result));
+		assertEquals("30,64", formatter.format(result));
 	}
 	
 	@Test
 	void testAverage() {
 		
 		double result = s1.getAverageLength();
-		assertEquals("7.66", formatter.format(result));
+		assertEquals("7,66", formatter.format(result));
 	}
 }
