@@ -6,8 +6,10 @@
 import edu.duke.*;
 import org.apache.commons.csv.*;
 public class WhichCountriesExport {
-    
-    public void listExportersByEconomy(CSVParser parser) {
+      FileResource fr = new FileResource();
+        CSVParser parser = fr.getCSVParser();
+        
+    public void listExportersByEconomy() {
         //for each row in the CSV File
         for(CSVRecord record : parser){                  
             String value = record.get("Value (dollars)");       
@@ -19,7 +21,7 @@ public class WhichCountriesExport {
         
 
     }
-    public void listExporters(CSVParser parser, String exportOfInterest) {
+    public void listExporters(String exportOfInterest) {
         //for each row in the CSV File
         for(CSVRecord record : parser){                  
             String export = record.get("Exports");
@@ -41,8 +43,7 @@ public class WhichCountriesExport {
     }
 
     public void whoExports() {
-        FileResource fr = new FileResource();
-        CSVParser parser = fr.getCSVParser();
-        listExportersByEconomy(parser);
+      
+        listExportersByEconomy();
     }
 }
